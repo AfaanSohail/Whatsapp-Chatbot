@@ -1,0 +1,14 @@
+# Security / Tokens
+wa-token
+wa-token.txt
+.env
+
+# Python Cache & Virtual Environments
+__pycache__/
+*.pyc
+venv/
+env/
+.venv/
+
+# Database
+restaurant.db

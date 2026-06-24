@@ -1,0 +1,311 @@
+{
+  "business": {
+    "restaurant_name": "The Rustic Slice Pizza & Wings",
+    "address": "123 Main Street, Downtown Food District",
+    "timezone": "America/New_York",
+    "tax_rate_percent": 8.5,
+    "payment_methods": [
+      "Online Credit Card (via Stripe link sent in chat)",
+      "Cash on Delivery (COD)"
+    ]
+  },
+  "hours": {
+    "timezone": "America/New_York",
+    "monday_thursday_open": "11:00",
+    "monday_thursday_close": "22:00",
+    "friday_saturday_open": "11:00",
+    "friday_saturday_close": "23:30",
+    "sunday_open": "12:00",
+    "sunday_close": "21:00"
+  },
+  "delivery_policy": {
+    "fee": 3.99,
+    "minimum_order": 15.0,
+    "free_delivery_threshold": 50.0,
+    "max_delivery_radius_miles": 5.0,
+    "supported_order_types": [
+      "Delivery",
+      "Pickup"
+    ],
+    "pickup_address": "123 Main Street, Downtown Food District"
+  },
+  "categories": [
+    {
+      "id": "pizzas",
+      "display_name": "Pizzas"
+    },
+    {
+      "id": "wings_and_sides",
+      "display_name": "Wings & Sides"
+    },
+    {
+      "id": "drinks",
+      "display_name": "Drinks"
+    }
+  ],
+  "menu_items": [
+    {
+      "id": "classic_margherita",
+      "category": "pizzas",
+      "name": "Classic Margherita",
+      "description": "Fresh mozzarella, house-made tomato sauce, and fresh basil leaves.",
+      "image_url": "https://www.pexels.com/photo/buratta-pizza-27793841/",
+      "price": 14.0,
+      "sizes": [
+        {
+          "size": "Medium",
+          "price": 14.0
+        },
+        {
+          "size": "Large",
+          "price": 18.0
+        }
+      ],
+      "required_choices": [],
+      "included_items": [],
+      "modifiers": [
+        {
+          "name": "Extra Cheese",
+          "price": 2.0,
+          "constraint": null,
+          "requires_secondary_item_selection": false,
+          "secondary_item_category": null,
+          "pricing_logic": null
+        },
+        {
+          "name": "Gluten-Free Crust",
+          "price": 3.0,
+          "constraint": null,
+          "requires_secondary_item_selection": false,
+          "secondary_item_category": null,
+          "pricing_logic": null
+        },
+        {
+          "name": "Half-and-Half",
+          "price": 2.0,
+          "constraint": null,
+          "requires_secondary_item_selection": true,
+          "secondary_item_category": "pizzas",
+          "pricing_logic": "highest_half_base_plus_flat_fee"
+        }
+      ]
+    },
+    {
+      "id": "the_meat_lover",
+      "category": "pizzas",
+      "name": "The Meat Lover",
+      "description": "Loaded with premium pepperoni, Italian sausage, and crispy bacon.",
+      "image_url": "https://www.pexels.com/photo/pizza-with-pepperoni-and-cheese-5903276/",
+      "price": 17.0,
+      "sizes": [
+        {
+          "size": "Medium",
+          "price": 17.0
+        },
+        {
+          "size": "Large",
+          "price": 22.0
+        }
+      ],
+      "required_choices": [],
+      "included_items": [],
+      "modifiers": [
+        {
+          "name": "Extra Cheese",
+          "price": 2.0,
+          "constraint": null,
+          "requires_secondary_item_selection": false,
+          "secondary_item_category": null,
+          "pricing_logic": null
+        },
+        {
+          "name": "Gluten-Free Crust",
+          "price": 3.0,
+          "constraint": null,
+          "requires_secondary_item_selection": false,
+          "secondary_item_category": null,
+          "pricing_logic": null
+        },
+        {
+          "name": "Half-and-Half",
+          "price": 2.0,
+          "constraint": null,
+          "requires_secondary_item_selection": true,
+          "secondary_item_category": "pizzas",
+          "pricing_logic": "highest_half_base_plus_flat_fee"
+        }
+      ]
+    },
+    {
+      "id": "spicy_bbq_chicken",
+      "category": "pizzas",
+      "name": "Spicy BBQ Chicken",
+      "description": "Grilled chicken in spicy BBQ sauce, topped with red onions and fresh cilantro.",
+      "image_url": "https://www.pexels.com/photo/delicious-barbecue-chicken-pizza-on-wooden-table-33458049/",
+      "price": 16.0,
+      "sizes": [
+        {
+          "size": "Medium",
+          "price": 16.0
+        },
+        {
+          "size": "Large",
+          "price": 20.0
+        }
+      ],
+      "required_choices": [],
+      "included_items": [],
+      "modifiers": [
+        {
+          "name": "Extra Cheese",
+          "price": 2.0,
+          "constraint": null,
+          "requires_secondary_item_selection": false,
+          "secondary_item_category": null,
+          "pricing_logic": null
+        },
+        {
+          "name": "Gluten-Free Crust",
+          "price": 3.0,
+          "constraint": null,
+          "requires_secondary_item_selection": false,
+          "secondary_item_category": null,
+          "pricing_logic": null
+        },
+        {
+          "name": "Half-and-Half",
+          "price": 2.0,
+          "constraint": null,
+          "requires_secondary_item_selection": true,
+          "secondary_item_category": "pizzas",
+          "pricing_logic": "highest_half_base_plus_flat_fee"
+        }
+      ]
+    },
+    {
+      "id": "bone_in_wings",
+      "category": "wings_and_sides",
+      "name": "Bone-in Wings",
+      "description": "Crispy fried bone-in wings tossed in your choice of sauce.",
+      "image_url": "https://www.pexels.com/photo/spicy-buffalo-wings-with-creamy-dip-on-plate-36782573/",
+      "price": 10.99,
+      "sizes": [
+        {
+          "size": "6 pieces",
+          "price": 10.99
+        },
+        {
+          "size": "12 pieces",
+          "price": 18.99
+        }
+      ],
+      "required_choices": [
+        {
+          "name": "Sauce Flavor",
+          "options": [
+            "Buffalo",
+            "Lemon Pepper",
+            "Garlic Parmesan"
+          ],
+          "min_selections": 1,
+          "max_selections": 1
+        },
+        {
+          "name": "Free Dip",
+          "options": [
+            "Ranch",
+            "Blue Cheese"
+          ],
+          "min_selections": 1,
+          "max_selections": 1
+        }
+      ],
+      "included_items": [],
+      "modifiers": [
+        {
+          "name": "Ranch Dip",
+          "price": 0.5,
+          "constraint": null,
+          "requires_secondary_item_selection": false,
+          "secondary_item_category": null,
+          "pricing_logic": null
+        },
+        {
+          "name": "Blue Cheese Dip",
+          "price": 0.5,
+          "constraint": null,
+          "requires_secondary_item_selection": false,
+          "secondary_item_category": null,
+          "pricing_logic": null
+        }
+      ]
+    },
+    {
+      "id": "garlic_knots",
+      "category": "wings_and_sides",
+      "name": "Garlic Knots",
+      "description": "Baked fresh daily, brushed with garlic butter and herbs.",
+      "image_url": "https://www.pexels.com/photo/freshly-baked-sesame-seed-knot-bread-on-tray-28869017/",
+      "price": 5.99,
+      "sizes": [
+        {
+          "size": "5 knots",
+          "price": 5.99
+        }
+      ],
+      "required_choices": [],
+      "included_items": [
+        "1 free side of marinara sauce"
+      ],
+      "modifiers": []
+    },
+    {
+      "id": "coke",
+      "category": "drinks",
+      "name": "Coke",
+      "description": "Ice cold canned soda.",
+      "image_url": "https://www.pexels.com/photo/close-up-photo-of-a-coca-cola-can-on-a-black-textile-9706990/",
+      "price": 2.5,
+      "sizes": [],
+      "required_choices": [],
+      "included_items": [],
+      "modifiers": []
+    },
+    {
+      "id": "diet_coke",
+      "category": "drinks",
+      "name": "Diet Coke",
+      "description": "Ice cold canned soda.",
+      "image_url": "https://www.pexels.com/photo/water-dripping-from-the-table-with-red-can-of-coca-cola-zero-19504118/",
+      "price": 2.5,
+      "sizes": [],
+      "required_choices": [],
+      "included_items": [],
+      "modifiers": []
+    },
+    {
+      "id": "sprite",
+      "category": "drinks",
+      "name": "Sprite",
+      "description": "Ice cold canned soda.",
+      "image_url": "https://www.pexels.com/photo/refreshing-lemon-lime-soda-can-in-misty-setting-31332092/",
+      "price": 2.5,
+      "sizes": [],
+      "required_choices": [],
+      "included_items": [],
+      "modifiers": []
+    },
+    {
+      "id": "house_artisan_lemonade",
+      "category": "drinks",
+      "name": "House Artisan Lemonade",
+      "description": "Freshly squeezed in-house with a hint of mint.",
+      "image_url": "https://www.pexels.com/photo/refreshing-lemon-mint-drink-on-white-surface-36630817/",
+      "price": 3.5,
+      "sizes": [],
+      "required_choices": [],
+      "included_items": [],
+      "modifiers": []
+    }
+  ]
+}
