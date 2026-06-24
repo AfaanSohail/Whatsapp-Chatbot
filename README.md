@@ -11,9 +11,9 @@ An intelligent, hybrid-architecture WhatsApp chatbot built for a restaurant. Thi
 ## Demo
 Here is the bot in action:
 
-![WhatsApp Chat Demonstration](ss.jpg)
-![WhatsApp Chat Demonstration](ss2.jpg)
-![WhatsApp Chat Demonstration](ss3.jpg)
+![WhatsApp Chat Demonstration](ss.png)
+![WhatsApp Chat Demonstration](ss2.png)
+![WhatsApp Chat Demonstration](ss3.png)
 
 ## Tech Stack
 * **Backend:** Python, FastAPI
